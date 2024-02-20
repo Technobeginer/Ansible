@@ -1,6 +1,6 @@
 ---
 - name: Web server setup
-  hosts: webservers
+  hosts: all
   become: yes
   tasks:
    - name: Install httpd
