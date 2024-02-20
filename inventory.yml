@@ -1,12 +1,8 @@
 all:
   hosts:
-    allservers:
-  children:
-    webservers:
-      hosts:
-        web01:
-          ansible_host: 18.232.152.86
-          ansible_user: ec2-user
+    ansible_host: 18.232.152.86
+    ansible_user: ec2-user
+    
     
         
 
