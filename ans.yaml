@@ -12,24 +12,3 @@
        name: httpd
        state: started
        enabled: yes
-- name: DB server setup
-  hosts: dbservers
-  become: yes
-  tasks:
-   - name: Install the maria db server
-     ansible.builtin.yum:
-       name: mariadb-server 
-       state: present
-   - name: Starting the maria db server
-     ansible.builtin.service:
-       name: mariadb.service
-       state: started
-       enabled: yes
-- name: Java installation
-  hosts: all
-  become: yes
-  tasks:
-    - name: Download the JDK binaries
-      ansible.builtin.yum:
-        name: java-11-amazon-corretto.x86_64
-        state: present
