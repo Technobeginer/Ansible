@@ -5,7 +5,7 @@ all:
     webservers:
       hosts:
         web01:
-          ansible_host: 54.165.68.223
+          ansible_host: 18.232.152.86
           ansible_user: ec2-user
     
         
