@@ -1,9 +1,0 @@
-all:
-  hosts:
-    ansible_host: 34.203.211.208
-    ansible_user: ec2-user
-    
-    
-        
-
-
